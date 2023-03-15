@@ -1,0 +1,640 @@
+/* CSS  Document */
+
+/* CSS Document */
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+a:hover {
+    text-decoration: none !important;
+}
+ol, ul {
+    list-style-position: inside;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*{
+    outline:none !important;
+}
+html{ 
+    font-size:16px;
+}
+h2 {
+    font-size: 1.5rem !Important;
+    margin-bottom: 1.5rem !Important;
+    color: #000000;
+    font-family: Roboto Medium;
+}
+h3{
+    font-size: 1.25rem !important;
+    margin-bottom: 0.625rem;
+    color: #000000;
+    font-family: Roboto Medium;
+}
+h4{
+    font-size: 1rem !important;
+    margin-bottom: 0.625rem;
+    color: #000000;
+    font-family: Roboto Medium;
+}
+p {
+    font-size:1rem;
+    margin-bottom: 0.938rem;
+    line-height:1.5rem;
+    color: #111111;
+    font-family: Roboto Light;
+}
+a {
+    font-size: 0.938rem;
+    color: #111111 !important;
+    display: inline-block;
+    text-decoration: none !important;
+    font-family: Roboto Medium;
+    transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -o-transition:  all 0.2s ease-in-out 0.1s;
+    -ms-transition: all 0.2s ease-in-out 0.1s;
+}
+a:hover {
+    color:#C3352Aed !important;
+}
+button {
+    font-family: Roboto Medium;
+}
+body {
+    margin:0;
+    padding: 0;
+    font-family: Roboto Light;
+    background-color: #f5f5f5 !important;
+    line-height:normal;
+    overflow-x: hidden !important; 
+}
+.container{
+    position:relative;
+    width:75rem;
+    margin:auto;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9999;
+    /*padding: 0.625rem 0;*/
+    transition:all 0.2s ease-in 0.2s;
+    background-color: #ffffff;
+}
+
+/* Sticky Header CSS*/
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9999;
+    padding: 0.625rem 0;
+    background-color:#000000;
+    transition: all 0.2s ease-in 0.2s;
+}
+
+.header-top  .navbar-brand img {
+    width: 5rem;
+    transition: all 0.2s ease-in 0.2s;
+}/* End */
+
+#mainContent {
+    background-color: #f5f5f5;
+}
+
+#heroHome::before{
+    width:100vw;
+    height:100vh;
+    content:"";
+    background-color:rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+#heroHome {
+    padding-top: 170px;
+}
+.accoridanBtnBG {
+    background-color:#C3352Aed !important;
+    color:#ffffff !important;
+    padding: 10px 20px;
+}
+.accordion-button::after {
+    display: none;
+}
+.shopBycategoryWrapper {
+    background-color: #ffffff;
+}
+.shopBycategoryWrapper h3 {
+    padding: 10px;
+    margin: 0;
+    background-color: #C3352Aed;
+    color: #ffffff;
+}
+.shopBycategoryWrapper h3 i {
+    font-size: 20px;
+    padding-right: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.shopBycategoryMenu  {
+    padding:0;
+}
+.shopBycategoryMenu li {
+    list-style: none;
+}
+.shopBycategoryMenu li a {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dddddd ;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+.headerTop {
+    border-bottom: 1px solid #dddddd;
+    padding: 5px 0;
+}
+.languageLink select {
+    border:none;
+    width:80px;
+}
+.middleHeader {
+    padding: 20px 0 5px;
+}
+#navbarSupportedContent {
+    position: relative;
+}
+#navbarSupportedContent:before  {
+    width: 120%;
+    height: 1px;
+    content: "";
+    background-color: #dddddd;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+.headerSearchInput select {
+    width: 150px;
+    border: 1px solid #dddddd;
+    padding: 2px 5px;
+    height: 35px;
+}
+.headerSearchInput input {
+    width: 300px;
+    border: 1px solid #dddddd;
+    padding: 2px 5px;
+    margin-left: -6px;
+    height: 35px;
+}
+.headerSearchInput button {
+    background-color:#C3352Aed;
+    color: #ffffff;
+    border: 4px solid #C3352Aed;
+    padding: 2px 10px;
+    margin-left: -6px;
+    height: 35px;
+}
+
+
+.navbar-toggle {
+    display: none;
+}
+.navbar-brand img{
+    width:7.188rem;
+    transition: all 0.2s ease-in 0.2s;
+}
+.navbar-brand {
+    border-right: 1px solid rgba(255, 255, 255, .4);
+    padding-right:1.563rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.SMSPrimaryNavigation nav {
+    padding:0;
+}
+.SMSPrimaryNavigation .navbar-nav a {
+    color:#ffffff;
+    text-transform: uppercase;
+}
+ .hero-btn:hover {
+    text-decoration: none;
+    color:#C3352Aed;
+    background-color: #ffffff;
+    border:0.125rem solid  #ffffff;
+    transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -o-transition:  all 0.2s ease-in-out 0.1s;
+    -ms-transition: all 0.2s ease-in-out 0.1s;
+}
+.hero-btn {
+    padding: 0.425rem 1.2rem;
+    display: inline-block;
+    color:#ffffff !important;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.07rem;
+    border:0.063rem solid  #33a6d7;
+    transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -o-transition:  all 0.2s ease-in-out 0.1s;
+    -ms-transition: all 0.2s ease-in-out 0.1s;
+    background-color: transparent;
+    border:0.125rem solid #ffffff;
+    margin-bottom: 1.25rem;
+}
+.hero-caption-btn {
+    animation: fadeLeft 0.5s forwards;
+    opacity:0;
+    animation-delay: 0.5s;
+}
+.carousel-item {
+    min-height: 18.75rem;
+}
+.carousel-caption {
+    top:6rem;
+}
+/*.carousel-item img {
+    height:120%;
+}*/
+
+.carousel-caption h2  {
+    color: #ffffff;
+    animation: fadeUp 0.5s forwards;
+    opacity: 0;
+    animation-delay: .5s;
+}
+.carousel-caption p {
+    width: 60%;
+    margin:1rem auto;
+    color: #ffffff;
+    animation: fadeDown 0.5s forwards;
+    opacity: 0;
+    animation-delay: .5s;
+}
+.bannerAdvertisement img {
+    height:435px;
+}
+
+
+
+
+/* Animations */
+
+@keyframes fadeUp {
+
+    0%{
+        transform:translateY(4rem);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0);
+    }
+
+}
+@keyframes fadeDown {
+
+    0%{
+        transform:translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0);
+    }
+
+}
+@keyframes fadeLeft {
+
+    0%{
+        transform:translateX(-8rem);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0);
+    }
+
+}/* End */
+
+/*  Banner Links CSS*/
+
+.sP70{
+    padding-top:4.375rem;
+}
+.card.categoryItem , .card.featuredProductItem , .card.blogPost {
+    border: none;
+    margin-bottom: 30px;
+}
+.card.featuredProductItem .siteButton {
+    width: 100%;;
+}
+.categoryItem img {
+    width:100%;
+}
+.categoryItem h3 , .categoryItem p {
+    text-align: center;
+}/* End */
+
+/*  Banner Links CSS*/
+
+.bannerLinksWrapper {
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    height:240px;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 15px;
+}
+.bannerLinksWrapper:before {
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+}
+.bannerLinksBg1 {
+    background: url("images/headphone.jpg");
+}
+.bannerLinksBg2 {
+    background: url("images/furniture-bg.jpg");
+    background-position: center right;
+}
+.bannerLinksBg3 {
+    background: url("images/mens-wear.jpg");
+    background-position: center right;
+}
+.bannerLinksItem h3 , .bannerLinksItem span , .bannerLinksItem p {
+    color: #ffffff;
+}
+.bannerLinksItem {
+    width: 55%;
+    float: right;
+    width: 55%;
+    float: right;
+    position: relative;
+    z-index: 999;
+}
+.bannerLinksItem h2 {
+    color: #ffffff;
+}
+a.siteButton {
+    padding: 5px 30px;
+    background-color: #C3352Aed;
+    text-align: center;
+    text-decoration: none;
+    color: #111111;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+}
+a.siteButton:hover {
+    
+    color: #ffffff !Important;
+    transition: all ease-in-out 0.3s;
+}
+.itemPrice {
+    font-weight: bold;
+    color:#C3352Aed;
+} /* End */
+
+
+/* Other Categories Section CSS */
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+    background-color :#ffffff;
+
+}
+.blog-post .card-title {
+    color:#000000;
+}
+.blog-post {
+    box-shadow: 0.1rem 0.1rem 0.2rem 0rem #EEEEEE ;
+}
+.blog-post .card-body a {
+    color:#000000;
+    text-decoration: none;
+}
+/*.owl-dots {
+    display: none;
+}
+.owl-nav buttons {
+    position:absolute !important;
+    top:50%;
+    left:0;
+    right:0;
+}
+.owl-prev , .owl-next {
+    position: absolute;
+    top: 50%;
+    background: transparent !important;
+}
+.owl-prev {
+    left: -5rem;
+}
+.owl-next {
+    right: -5rem;
+}
+.owl-prev span , .owl-next span {
+    font-size: 3.5rem;
+    opacity: 0.3;
+    color: #000000;
+    transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -o-transition:  all 0.2s ease-in-out 0.1s;
+    -ms-transition: all 0.2s ease-in-out 0.1s;
+}
+.owl-nav buttons:hover span {
+    width: 1.75rem;
+    height: 1.75rem;
+    opacity: 1;
+    color: #ffffff;
+    background: #33a6d7 !important;
+    transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -o-transition:  all 0.2s ease-in-out 0.1s;
+    -ms-transition: all 0.2s ease-in-out 0.1s;
+}*/
+
+.card-horizontal .otherCategoriesItem{
+    border:none ;
+    margin-bottom: 2.5rem;
+    background-color: transparent;
+}
+.card-horizontal.otherCategoriesItem .card-body {
+    padding:0;
+    width:60%;
+    float: left;
+}
+.img-square-wrapper {
+    margin-right:1.25rem;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.img-square-wrapper img {
+    width:100%;
+}
+.viewAllBtnLink {
+    float: right;
+}
+.otherCategoriesWrapper .sectionHeading h2 , #featuredProducts .sectionHeading h2 {
+    display:inline-block;
+}/* End */
+
+/* Our Blog Section CSS */
+
+.blogPostDate {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.ourBlogBg {
+    background-color: #ffffff;
+    padding: 30px 0;
+}
+.blogPost .card-body {
+    padding-left:0px;
+}
+
+/* End */
+
+/* Why Us Section CSS */
+
+
+#whyUs {
+    padding-bottom: 40px;
+}
+.whyUsWrapper i{
+    font-size:45px;
+    color:#C3352Aed;
+}
+.whyUsText span {
+    display:inline-block;
+}
+.whyUsWrapper:before {
+    content: "\f017";
+    font-family: FontAwesome;
+    font-size:40px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight:900;
+    padding-right: 10px;
+    color: #C3352Aed;
+}
+.whyUsWrapper.refundfIcon:before {
+    content: "\f155";
+}
+.whyUsWrapper.QsIocn:before {
+    content: "\f013";
+}
+.whyUsWrapper.newsletterIcon:before {
+    content: "\f003";
+}
+.whyUsText {
+    display: inline-block;
+}
+.whyUsText p {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}/* End */
+
+/* Footer Section CSS */
+
+#siteFooter {
+    background-color: #ffffff;
+}
+#siteFooter h3 {
+    color: #C3352Aed;
+}
+#siteFooter 
+.footerSocialIcons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.quickLinks a {
+    font-family: Roboto Regular;
+}
+.footerSocialIcons li {
+    float: left;
+}
+.footerSocialIcons li a {
+    color:#C3352Aed !important;
+    margin-right: 15px;
+    font-size: 25px;
+    transition:all ease-in 0.2s;
+}
+.footerSocialIcons li a:hover {
+    font-size: 28px;
+    transition:all ease-in 0.2s;
+}
+.copyRights {
+    padding: 10px 0;
+    border-top: 1px solid #dddddd;
+}
+.copyRights  p {
+    font-size: 0.8rem;
+}
+.footerInstagramPhotos {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+.footerInstagramPhotos li{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin:0 10px 10px 0;
+    transition:all ease-in 2s;
+}
+.footerInstagramPhotos li a img {
+    width: 100%;
+}
+.footerInstagramPhotos li:hover a {
+    opacity: 0.5;
+    transition: all ease-in 0.2s;
+}
+/* End */
